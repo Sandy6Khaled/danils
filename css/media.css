@@ -1,0 +1,31 @@
+@media all and (max-width:575px){
+    .head-title{
+        font-size: 2rem;
+    }
+}
+@media all and (max-width:767px) and (min-width:576px){
+
+    .head-title{
+        font-size: 2rem;
+    }
+}
+@media all and (max-width:991px) and (min-width:768px){
+    .about-img-section{
+        width: 100%;
+    }
+    .about-text-section{
+        width: 100%;
+    }
+    .services .item-div{
+        width: 100%;
+    }
+    .head-title{
+        font-size: 2.5rem;
+    }
+}
+@media all and (max-width:1199px) and (min-width:992px){
+
+}
+@media all and (min-width:1200px){
+    
+}

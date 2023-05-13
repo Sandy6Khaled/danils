@@ -1,0 +1,541 @@
+:root{
+    --color:#999;
+    --p-color: #748182;
+    --bg-color:#f7f7f7;
+    --bg-span-icon:#f4f4f4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #343434;
+    font-weight: 400;
+}
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+/**********************************************navbar*********************************/
+.logo{
+    font-weight: 700;
+}
+.nav-text{
+    font-size: 0.9rem;
+}
+/* .navbar-nav .nav-link.active{
+    position: relative;
+}
+.navbar-nav .nav-link.active::after{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    top: 80%;
+    position: absolute;
+} */
+.navbar-nav .nav-link{
+    position: relative;
+}
+.navbar-nav .nav-link::after{
+    content: "";
+    background-color: black;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    top: 80%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+/**********************************************Home*********************************/
+.home-section{
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.layout{
+    background-color: rgba(0,0,0,0.6);
+}
+.hello-text{
+    font-size: 3rem;
+}
+.icon-span{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 50%;
+}
+.icon-span:hover{
+    cursor: pointer;
+}
+.head-title{
+    font-size: 4rem;
+    font-weight: 100;
+    position: relative;
+}
+.head-title::after{
+    content: "I'M |";
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation-name: typing;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{
+        content: "I'M |";
+    }
+    3.22%{
+        content: "I'M La|";
+    }
+    6.44%{
+        content: "I'M Larr|";
+    }
+    9.66%{
+        content: "I'M Larry |";
+    }
+    12.88%{
+        content: "I'M Larry Da|";
+    }
+    16.1%{
+        content: "I'M Larry Dani|";
+    }
+    19.32%{
+        content: "I'M Larry Daniel|";
+    }
+    22.54%{
+        content: "I'M Larry Daniels|";
+    }
+    25.76%{
+        content: "I'M Larry Danie|";
+    }
+    28.98%{
+        content: "I'M Larry Dan|";
+    }
+    32.2%{
+        content: "I'M Larry D|";
+    }
+    35.42%{
+        content: "I'M Larry|";
+    }
+    38.64%{
+        content: "I'M Lar|";
+    }
+    41.86%{
+        content: "I'M L|";
+    }
+    45.08%{
+        content: "I'M |";
+    }
+    48.3%{
+        content: "I'M De|";
+    }
+    51.52%{
+        content: "I'M Deve|";
+    }
+    54.74%{
+        content: "I'M Develo|";
+    }
+    57.96%{
+        content: "I'M Developer|";
+    }
+    61.18%{
+        content: "I'M Develop|";
+    }
+    64.4%{
+        content: "I'M Devel|";
+    }
+    67.62%{
+        content: "I'M Dev|";
+    }
+    70.84%{
+        content: "I'M D|";
+    }
+    74.06%{
+        content: "I'M Des|";
+    }
+    77.28%{
+        content: "I'M Desig|";
+    }
+    80.5%{
+        content: "I'M Designe|";
+    }
+    83.72%{
+        content: "I'M Designer|";
+    }
+    86.94%{
+        content: "I'M Design|";
+    }
+    90.16%{
+        content: "I'M Desi|";
+    }
+    93.38%{
+        content: "I'M De|";
+    }
+    96.6%{
+        content: "I'M |";
+    }
+    
+
+}
+/**********************************************About*********************************/
+.about-img-div {
+    position: relative;
+}
+.about-img-div::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -10px;
+    bottom: -30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.sub-title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--color);
+    font-size: 14px;
+}
+.about-text-para{
+    line-height: 1.6;
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--p-color);
+}
+.progress-bar{
+    background-color: black;
+}
+.percentage-div{
+    height: 1.5rem;
+}
+.skills-title{
+    font-size: 14px;
+}
+.about-section-buttons{
+    margin-top: 30px;
+}
+.dark-button{
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+.light-button{
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+.dark-button:hover{
+    background-color: white;
+    color: black;
+}
+/**********************************************services*********************************/
+.services{
+    background-color: var(--bg-color);
+}
+.section-heading{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+.section-heading::after{
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.services .item-div .item{
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.services .item-div .item .icon{
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: var(--bg-span-icon);
+    border-radius: 50%;
+    transition: all .5s;
+}
+.services .item-div .item:hover .icon {
+    background: #1c1c1c;
+    color: #eee;
+}
+.services .item-div .item h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+.services .item-div .item p {
+    word-spacing: 2px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--p-color);
+    font-weight: 500;
+}
+/**********************************************work*********************************/
+.nav-pills .nav-link.active{
+    color: #222;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.nav-pills .nav-link.active::after{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    top: 80%;
+    position: absolute;
+}
+.nav-pills .nav-link{
+    color: #222;
+}
+.work-img-div{
+    position: relative;
+}
+.work-icon .work-button-img {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    border-radius: 50%;
+    border: 1px solid #111;
+    transition: all 0.5s ease-in-out;
+}
+.work-icon .work-button-img a{
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.work-icon .work-button-img:hover{
+    background-color: #fff;
+}
+.work-icon .work-button-img:hover a{
+    color: #111;
+}
+
+.layout-header{
+    width: 100%;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.work-img-layout h6{
+    position: absolute;
+    bottom: 100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.work-img-layout:hover h6{
+    bottom: 0;
+    opacity: 1;
+}
+
+.work-button-icon{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.work-button-icon button{
+    position: relative;
+    top: 100%;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+.work-img-layout:hover .work-button-icon button{
+    top: 0;
+    opacity: 1;
+}
+.work-img-div{
+    position: relative;
+    overflow: hidden;
+}
+.work-img-layout{
+    overflow: hidden;
+    top: 100%;
+    width: 97%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.work-img-div:hover .work-img-layout{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+/**********************************************testimonial*********************************/
+.testimonials{
+    background-color: var(--bg-color);
+}
+.author-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    background-color: #869791;
+    border-radius: 50%;
+}
+.citem p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+    margin: 15px;
+}
+.citem h6{
+    margin: 15px;
+}
+.citem span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+/**********************************************numbering div*********************************/
+.num-item {
+    font-size: 1.5rem;
+}
+.num-item h3{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.num-item p{
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+    margin: 15px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+/**********************************************blog*********************************/
+.blog{
+    background-color: var(--bg-color);
+}
+/* .carousel-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+.card-title{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 10px;
+}
+.card-text{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.card-text a{
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.more {
+    border-bottom: 2px solid #333;
+    color: #343434;
+    font-weight: 400;
+    background-color: transparent;
+}
+.card-img-div{
+    overflow: hidden;
+}
+.card-img-div img{
+    transition: all 1s ease-in-out;
+}
+.card-img-div:hover img{
+    transform: scale(1.5);
+}
+/**********************************************Contact*********************************/
+.contact .form-group input,.contact .form-group textarea{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.submit-btn{
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.submit-btn:hover{
+    background-color: transparent;
+    color: #111;
+}
+.contact .item{
+    padding: 50px 20px;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.contact .item .icon{
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: var(--bg-span-icon);
+    border-radius: 50%;
+    transition: all .5s;
+}
+.contact .item .icon:hover {
+    background: #1c1c1c;
+    color: #eee;
+}
+.contact .item h6{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.contact .item p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #748182;
+}
+/**********************************************footer*********************************/
+footer{
+    background-color: #111;
+    color: #748182;
+    height: 10vh;
+    text-align: center;
+}
